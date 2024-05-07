@@ -1,3 +1,57 @@
 /* 
     General Styles
 */
+
+.container-delete {
+    width: 20px;
+    float: inline-end;
+    margin-right: -30px;
+    margin-top: 155px;
+    font-size: 25px;
+}
+
+.container-modify {
+    width: 20px;
+    float: inline-start;
+    margin-left: -315px;
+    font-size: 25px;
+}
+
+.img-card {
+    width: 15rem;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin-top: 10%;
+    margin-left: 35px;
+    padding-left: 15px;
+    box-shadow: -1px 0px 36px -8px rgba(255,255,255,1);
+    animation: rotacion 2s ease-in-out forwards;
+}
+
+@keyframes rotacion {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.card {
+    background-image: url('https://img.freepik.com/fotos-premium/decoracion-grunge-textura-pared-piso_1258-37806.jpg');
+    background-size: cover;
+    color: white;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    animation: slideIn 1s ease;
+    
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
