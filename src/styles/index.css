@@ -2,10 +2,24 @@
     General Styles
 */
 
+body {
+    background-image: url(https://coolwallpapers.me/picsup/3352135-metro-2033-redux-metro-redux-4a-games-deep-silver-equipment.jpg);
+    background-size: cover;
+    font-family: Franklin Gothic;
+}
+
+.nav-principal {
+    background: black;
+}
+
+.img-nav {
+    flex: auto;
+}
+
 .container-delete {
     width: 20px;
     float: inline-end;
-    margin-right: -30px;
+    margin-right: -34px;
     margin-top: 155px;
     font-size: 25px;
 }
@@ -13,7 +27,8 @@
 .container-modify {
     width: 20px;
     float: inline-start;
-    margin-left: -315px;
+    margin-left: -320px;
+    margin-top: -5px;
     font-size: 25px;
 }
 
@@ -44,7 +59,7 @@
     border-bottom-left-radius: 200px;
     border-top-right-radius: 200px;
     animation: slideIn 1s ease;
-    
+    width: 800px;
 }
 
 @keyframes slideIn {
@@ -55,3 +70,185 @@
         transform: translateY(0);
     }
 }
+
+.bodies-contacts {
+    width: 60rem;
+    border-radius: 35px;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/994bf163-ab46-4c32-97fb-9a1036f7e198/dfh6cxe-d5f842a6-99db-4651-837a-84cc6729bd1f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk5NGJmMTYzLWFiNDYtNGMzMi05N2ZiLTlhMTAzNmY3ZTE5OFwvZGZoNmN4ZS1kNWY4NDJhNi05OWRiLTQ2NTEtODM3YS04NGNjNjcyOWJkMWYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Oheij287bem2tCLedI6TipTMR48WbYP-dmriAUkE4f4);
+    background-size: cover;
+    box-shadow: 0px 0px 14px 15px rgba(0,0,0,0.75);
+}
+
+.bi-pencil-fill {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    transition: top 0.3s ease;
+}
+
+.bi-pencil-fill:hover {
+    top: -8px;
+}
+
+.bi-trash-fill {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    transition: top 0.3s ease;
+}
+
+.bi-trash-fill:hover {
+    top: -8px;
+}
+
+.title1 {
+    font-family: Impact;
+    transition: transform 0.3s ease;
+    position: relative;
+    color: #000; 
+    text-shadow: 
+        1px 1px 0px #646464, 
+        2px 2px 0px #706f6f, 
+        3px 3px 0px #797878, 
+        4px 4px 0px #7a7a7a, 
+        5px 5px 0px #666565, 
+        6px 6px 0px #525151, 
+        7px 7px 0px #424242, 
+        8px 8px 0px #383838, 
+        9px 9px 0px #292929, 
+        7px 7px 0px #1a1919; 
+}
+
+.title1:hover {
+    transform: scale(1.5);
+}
+
+#button-add {
+    position: relative;
+    color: white;
+    background-color: #6f1581;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#button-add::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: all 0.3s;
+    transform: rotate(45deg);
+}
+
+#button-add:hover::before {
+    top: -30%;
+    left: -30%;
+    opacity: 1;
+}
+
+#button-add:hover {
+    box-shadow: 0 0 20px rgba(231, 76, 91, 0.5);
+    transform: translateY(-8px);
+}
+
+#button-add i {
+    margin-right: 8px;
+}
+
+#button-return {
+    position: relative;
+    color: white;
+    background-color: #881c27;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#button-return::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: all 0.3s;
+    transform: rotate(45deg);
+}
+
+#button-return:hover::before {
+    top: -30%;
+    left: -30%;
+    opacity: 1;
+}
+
+#button-return:hover {
+    box-shadow: 0 0 20px rgba(231, 76, 91, 0.5);
+    transform: translateY(-8px);
+}
+
+#button-return i {
+    margin-right: 8px;
+}
+
+.title2 {
+    font-family: Impact;
+    transition: transform 0.3s ease;
+    position: relative;
+    color: #000; 
+    text-shadow: 
+        1px 1px 0px #646464, 
+        2px 2px 0px #706f6f, 
+        3px 3px 0px #797878, 
+        4px 4px 0px #7a7a7a, 
+        5px 5px 0px #666565, 
+        6px 6px 0px #525151, 
+        7px 7px 0px #424242, 
+        8px 8px 0px #383838, 
+        9px 9px 0px #292929, 
+        7px 7px 0px #1a1919; 
+}
+
+.title2:hover {
+    transform: scale(1.5);
+}
+
+.body-addContact {
+    background-image: url(https://i.pinimg.com/originals/3c/0f/04/3c0f0452e43607a92229fe86ed013951.gif);
+    background-size: cover;
+    width: 40rem;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 14px 15px rgba(0,0,0,0.75);
+}
+
+.button-save {
+    background-color: rgb(138, 4, 4);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button-save:hover {
+    background-color: rgb(168, 144, 4);
+    color: #fff;
+  }
+  
+  .button-save:hover::after {
+    content: ' now!';
+  }
+  

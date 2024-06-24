@@ -3,8 +3,8 @@ import { Context } from "../store/appContext";
 import "../../styles/demo.css";
 
 export const Card = ({ contact }) => {
-    const { actions } = useContext(Context);
 
+    const { actions } = useContext(Context);
     const [editedContact, setEditedContact] = useState({ ...contact });
     const [editing, setEditing] = useState(false);
 
@@ -18,14 +18,12 @@ export const Card = ({ contact }) => {
     }
 
     const handleDelete = () => {
-        if (window.confirm("Are you sure you want to delete this contact?")) {
-            actions.deleteContact(contact);
-        }
+        actions.setConfirmDeleteContact(contact);
     }
 
     return (
         <>
-            <div className="card mb-3 mb-5 m-auto" style={{ width: '850px' }}>
+            <div className="card mb-3 mb-5 m-auto">
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src="https://livewallpapers4free.com/wp-content/uploads/2023/11/thumb-25.jpg" className="img-card" />
@@ -33,8 +31,8 @@ export const Card = ({ contact }) => {
                     <div className="col-md-8">
                         <div className="container-modify">
                             {!editing ? (
-                                <button type="button" className="btn btn-light" onClick={() => setEditing(true)}>
-                                    <i className="bi bi-pencil-fill" style={{ color: 'rgb(206, 86, 243)' }}></i>
+                                <button type="button" className="btn btn-secondary rounded-circle" onClick={() => setEditing(true)}>
+                                    <i className="bi bi-pencil-fill"></i>
                                 </button>
                             ) : (
                                 <button type="button" className="btn btn-success" onClick={handleEdit}>
@@ -43,16 +41,16 @@ export const Card = ({ contact }) => {
                             )}
                         </div>
                         <div className="container-delete">
-                            <button type="button" className="btn btn-light" onClick={handleDelete}>
-                                <i className="bi bi-trash-fill" style={{ color: 'rgb(206, 86, 243)' }}></i>
+                            <button type="button" className="btn btn-secondary rounded-circle" onClick={handleDelete}>
+                                <i className="bi bi-trash-fill"></i>
                             </button>
                         </div>
                         <div className="card-body">
-                            <p className="card-name ms-1">{editing ? (
+                            <h4 className="card-name ms-1">{editing ? (
                                 <input type="text" name="name" value={editedContact.name} onChange={handleInputChange} />
                             ) : (
                                 contact.name
-                            )}</p>
+                            )}</h4>
                             <p className="card-adress ms-1">
                                 <i className="bi bi-geo-alt-fill" style={{ color: 'rgb(163, 228, 247)' }}></i> {editing ? (
                                     <input type="text" name="address" value={editedContact.address} onChange={handleInputChange} />
